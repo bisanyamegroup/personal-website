@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+    height: 70vh;
+    background: linear-gradient(to right, #1f3c88, #2c5cc5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: white;
+    color: #1f3c88;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    background: #f1f1f1;
+}
+
+/* NAVBAR */
+.navbar {
+    background: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1f3c88;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* SECTIONS */
+.section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1f3c88;
+}
+
+.section.light {
+    background: #f4f6f8;
+    padding: 60px 20px;
+}
+
+/* EXPERIENCE CARDS */
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #1f3c88;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* SKILLS */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.skill {
+    background: #1f3c88;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* CONTACT */
+a {
+    color: #1f3c88;
+}
+
+/* FOOTER */
+footer {
+    background: #1f3c88;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}
